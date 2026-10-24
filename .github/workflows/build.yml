@@ -20,7 +20,7 @@ jobs:
           path: openwrt
 
       - name: Patch device tree to Breed layout
-        run: python3 patch_dts.py
+        run: python3 .github/workflows/patch_dts.py
 
       - name: Install build dependencies
         run: |
